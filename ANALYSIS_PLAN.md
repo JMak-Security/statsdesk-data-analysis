@@ -69,3 +69,9 @@ After committing this plan and before retrieving a complete snapshot, an API sch
 exposes the matching three-character `id` and `region.value`. The implementation will join those
 fields and apply the already specified `region.value == "Aggregates"` exclusion. This clarifies
 field mapping only; the year, indicators, inclusion rules, and statistics are unchanged.
+
+A subsequent bounded response check found five aggregate observations with blank
+`countryiso3code`; their observation IDs are two-character aliases, and the bulk country listing
+does not include those aliases. Fetch their individual country metadata, match the alias through
+`iso2Code`, and retain the metadata's canonical three-character `id` in the snapshot. Their
+`region.value` remains the pre-specified aggregate exclusion criterion; no analysis method changed.
