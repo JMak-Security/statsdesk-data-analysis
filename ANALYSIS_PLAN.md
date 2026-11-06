@@ -61,3 +61,11 @@ hypothesis will be tested.
   policy effectiveness, or future values.
 - No alternative years, indicators, exclusions, or transformations will be added after observing
   the data without recording an amended plan and rationale.
+
+## Schema amendment
+
+After committing this plan and before retrieving a complete snapshot, an API schema check on
+2026-11-06 established that indicator records expose `countryiso3code`, while country metadata
+exposes the matching three-character `id` and `region.value`. The implementation will join those
+fields and apply the already specified `region.value == "Aggregates"` exclusion. This clarifies
+field mapping only; the year, indicators, inclusion rules, and statistics are unchanged.
