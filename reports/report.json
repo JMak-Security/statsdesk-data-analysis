@@ -1,0 +1,154 @@
+{
+  "analysis_plan": "ANALYSIS_PLAN.md, version 1.0",
+  "counts": {
+    "aggregate_records_excluded": 49,
+    "country_economy_records": 217,
+    "incomplete_records": 8,
+    "input_records": 266,
+    "invalid_numeric_values": 0,
+    "invalid_records": 0,
+    "missing_indicator_values": 8,
+    "paired_observations": 209
+  },
+  "descriptive_statistics": {
+    "gdp_per_capita_usd_current": {
+      "maximum": 226052.060665,
+      "mean": 21200.873571,
+      "median": 7655.59421,
+      "minimum": 301.832256,
+      "n": 209,
+      "p25_linear": 2899.160475,
+      "p75_linear": 28360.304147,
+      "sample_standard_deviation": 31131.453884
+    },
+    "population_total": {
+      "maximum": 1425423212.0,
+      "mean": 37680463.923445,
+      "median": 6664449.0,
+      "minimum": 9992.0,
+      "n": 209,
+      "p25_linear": 834188.0,
+      "p75_linear": 26018721.0,
+      "sample_standard_deviation": 144111856.708269
+    }
+  },
+  "highest_gdp_per_capita": [
+    {
+      "code": "MCO",
+      "country": "Monaco",
+      "gdp_per_capita_usd": 226052.060665,
+      "population": 38931,
+      "year": 2022
+    },
+    {
+      "code": "LIE",
+      "country": "Liechtenstein",
+      "gdp_per_capita_usd": 188055.003235,
+      "population": 39493,
+      "year": 2022
+    },
+    {
+      "code": "LUX",
+      "country": "Luxembourg",
+      "gdp_per_capita_usd": 123719.658916,
+      "population": 653103,
+      "year": 2022
+    },
+    {
+      "code": "BMU",
+      "country": "Bermuda",
+      "gdp_per_capita_usd": 119969.173269,
+      "population": 64749,
+      "year": 2022
+    },
+    {
+      "code": "NOR",
+      "country": "Norway",
+      "gdp_per_capita_usd": 113122.130766,
+      "population": 5457127,
+      "year": 2022
+    }
+  ],
+  "largest_population_sensitivity": {
+    "interpretation": "Descriptive robustness check; not an inferential test.",
+    "remaining_n": 206,
+    "removed_largest_population_records": 3,
+    "spearman_rho": -0.357264
+  },
+  "limitations": [
+    "Country/economy-level descriptive association does not establish causation.",
+    "GDP per capita is in current US dollars, not purchasing-power-adjusted or inflation-adjusted.",
+    "Missing values were not imputed; only valid paired observations were analyzed."
+  ],
+  "lowest_gdp_per_capita": [
+    {
+      "code": "BDI",
+      "country": "Burundi",
+      "gdp_per_capita_usd": 301.832256,
+      "population": 13321097,
+      "year": 2022
+    },
+    {
+      "code": "AFG",
+      "country": "Afghanistan",
+      "gdp_per_capita_usd": 357.261153,
+      "population": 40578842,
+      "year": 2022
+    },
+    {
+      "code": "CAF",
+      "country": "Central African Republic",
+      "gdp_per_capita_usd": 467.359825,
+      "population": 5098039,
+      "year": 2022
+    },
+    {
+      "code": "MDG",
+      "country": "Madagascar",
+      "gdp_per_capita_usd": 504.059107,
+      "population": 30437261,
+      "year": 2022
+    },
+    {
+      "code": "SOM",
+      "country": "Somalia, Fed. Rep.",
+      "gdp_per_capita_usd": 573.141166,
+      "population": 17801897,
+      "year": 2022
+    }
+  ],
+  "report_version": 1,
+  "source": {
+    "analysis_plan": "ANALYSIS_PLAN.md, version 1.0",
+    "api_documentation_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+    "api_last_updated": {
+      "country_metadata": null,
+      "gdp_per_capita_usd": "2026-10-08",
+      "population": "2026-10-08"
+    },
+    "attribution": "World Bank, World Development Indicators (CC BY 4.0)",
+    "catalog_url": "https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators",
+    "dataset": "World Development Indicators",
+    "dataset_id": "0037712",
+    "indicators": {
+      "gdp_per_capita_usd": "NY.GDP.PCAP.CD",
+      "population": "SP.POP.TOTL"
+    },
+    "license": "Creative Commons Attribution 4.0",
+    "license_url": "https://datacatalog.worldbank.org/public-licenses?fragment=cc",
+    "record_count": 266,
+    "retrieved_at_utc": "2026-11-06T08:22:42+00:00",
+    "snapshot_sha256": "f565721805e75bd3cd86ab65d59bae05c372a968875478276be3225b3a0b7ddb",
+    "source_urls": [
+      "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?date=2022&format=json&per_page=400",
+      "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022&format=json&per_page=400",
+      "https://api.worldbank.org/v2/country?format=json&per_page=400"
+    ],
+    "year": 2022
+  },
+  "spearman_rank_correlation": {
+    "n": 209,
+    "p_value": null,
+    "rho": -0.340391
+  }
+}

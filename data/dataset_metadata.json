@@ -1,0 +1,28 @@
+{
+  "analysis_plan": "ANALYSIS_PLAN.md, version 1.0",
+  "api_documentation_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+  "api_last_updated": {
+    "country_metadata": null,
+    "gdp_per_capita_usd": "2026-10-08",
+    "population": "2026-10-08"
+  },
+  "attribution": "World Bank, World Development Indicators (CC BY 4.0)",
+  "catalog_url": "https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators",
+  "dataset": "World Development Indicators",
+  "dataset_id": "0037712",
+  "indicators": {
+    "gdp_per_capita_usd": "NY.GDP.PCAP.CD",
+    "population": "SP.POP.TOTL"
+  },
+  "license": "Creative Commons Attribution 4.0",
+  "license_url": "https://datacatalog.worldbank.org/public-licenses?fragment=cc",
+  "record_count": 266,
+  "retrieved_at_utc": "2026-11-06T08:22:42+00:00",
+  "snapshot_sha256": "f565721805e75bd3cd86ab65d59bae05c372a968875478276be3225b3a0b7ddb",
+  "source_urls": [
+    "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?date=2022&format=json&per_page=400",
+    "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2022&format=json&per_page=400",
+    "https://api.worldbank.org/v2/country?format=json&per_page=400"
+  ],
+  "year": 2022
+}
